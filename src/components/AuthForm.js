@@ -27,11 +27,6 @@ const AuthForm = ({ headerText, errorMessage, submitButtonText, onSubmit }) => {
       <Spacer>
         <Button title={submitButtonText} onPress={() => onSubmit({ email, password })} />
       </Spacer>
-      <TouchableOpacity onPress={() => navigation.navigate("Signin")}>
-        <Spacer>
-          <Text style={styles.link}>Already have an account? Sign in instead</Text>
-        </Spacer>
-      </TouchableOpacity>
     </>
   );
 };
